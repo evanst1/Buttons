@@ -1,98 +1,114 @@
+.neon {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
 
-.neon{
-    position: relative;
-    display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
-    color: #03e9f4;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    margin-right: 50px;
-   
 }
-.neon:hover{
-    background: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+.neon:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-.neon:nth-child(1){
-    filter: hue-rotate(270deg);
+
+.neon:nth-child(1) {
+  filter: hue-rotate(270deg);
 }
-.neon:nth-child(2){
-    filter: hue-rotate(110deg);
+
+.neon:nth-child(2) {
+  filter: hue-rotate(110deg);
 }
-.neon span{
-    position: absolute;
-    display: block;
+
+.neon span {
+  position: absolute;
+  display: block;
 }
-.neon span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
-    animation: animate1 1s linear infinite;
+
+.neon span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
 }
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
 }
-a span:nth-child(2){
+
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
     top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#03e9f4);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-a span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#03e9f4);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
-}
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
 }
 
-.black{
-    background-color:#000;
+a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
 }
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.black {
+  background-color: #000;
+}
+
 .increase {
-    background-color: transparent;
-    border: none !important;
-    box-shadow: 3px 3px 6px #000 !important;
-    padding: 1rem !important;
-    border-radius: 1rem;
-    font-weight: bold !important;
+  background-color: transparent;
+  border: none !important;
+  box-shadow: 3px 3px 6px #000 !important;
+  padding: 1rem !important;
+  border-radius: 1rem;
+  font-weight: bold !important;
 }
 
 
@@ -134,145 +150,202 @@ a span:nth-child(3){
   }
 }
 
-.yellow{
-    text-decoration:none; 
-    color:#000 ;
+.yellow {
+  text-decoration: none;
+  color: #000;
 }
 
-.bouncy{
-    animation:bouncy 5s infinite linear;
-    position:relative;
-    }
-    @keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
-    }
-    .morebutton {
-        border: 1px solid #000 !important;
-        padding: 1rem !important;
-        text-decoration: none;
-        color: #000 !important;
-        font-weight: bolder;
-        margin-right:1rem ;
-    }
+.bouncy {
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
 
-    
-    body {
-        background: #e0e5ec;
-      }
-     
-      
-      .frame {
-        width: 90%;
-        margin: 40px auto;
-        text-align: center;
-      }
-      button {
-        margin: 20px;
-      }
-      
-      
-  
-      .custom-btn {
-        width: 130px;
-        height: 40px;
-        color: #fff;
-        border-radius: 5px;
-        padding: 10px 25px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        background: transparent;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-         7px 7px 20px 0px rgba(0,0,0,.1),
-         4px 4px 5px 0px rgba(0,0,0,.1);
-        outline: none;
-      }
-      .btn {
-      background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
-        line-height: 42px;
-        padding: 0;
-        border: none;
-      }
-      .btn span {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-      .btn:before,
-      .btn:after {
-        position: absolute;
-        content: "";
-        right: 0;
-        bottom: 0;
-        background: rgba(251,75,2,1);
-        box-shadow:
-         -7px -7px 20px 0px rgba(255,255,255,.9),
-         -4px -4px 5px 0px rgba(255,255,255,.9),
-         7px 7px 20px 0px rgba(0,0,0,.2),
-         4px 4px 5px 0px rgba(0,0,0,.3);
-        transition: all 0.3s ease;
-      }
-      .btn:before{
-         height: 0%;
-         width: 2px;
-      }
-      .btn:after {
-        width: 0%;
-        height: 2px;
-      }
-      .btn:hover{
-        color: rgba(251,75,2,1);
-        background: transparent;
-      }
-      .btn:hover:before {
-        height: 100%;
-      }
-      .btn:hover:after {
-        width: 100%;
-      }
-      .btn span:before,
-      .btn span:after {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        background: rgba(251,75,2,1);
-        box-shadow:
-         -7px -7px 20px 0px rgba(255,255,255,.9),
-         -4px -4px 5px 0px rgba(255,255,255,.9),
-         7px 7px 20px 0px rgba(0,0,0,.2),
-         4px 4px 5px 0px rgba(0,0,0,.3);
-        transition: all 0.3s ease;
-      }
-      .btn span:before {
-        width: 2px;
-        height: 0%;
-      }
-      .btn span:after {
-        height: 2px;
-        width: 0%;
-      }
-      .btn span:hover:before {
-        height: 100%;
-      }
-      .btn span:hover:after {
-        width: 100%;
-      }
-      
-      a.morebutton.bouncy:hover {
-        background-color: #000000 !important;
-        color: #fff !important;
-    }
+@keyframes bouncy {
+  0% {
+    top: 0em
+  }
+
+  40% {
+    top: 0em
+  }
+
+  43% {
+    top: -0.9em
+  }
+
+  46% {
+    top: 0em
+  }
+
+  48% {
+    top: -0.4em
+  }
+
+  50% {
+    top: 0em
+  }
+
+  100% {
+    top: 0em;
+  }
+}
+
+.morebutton {
+  border: 1px solid #000 !important;
+  padding: 1rem !important;
+  text-decoration: none;
+  color: #000 !important;
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+
+body {
+  background: #e0e5ec;
+}
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+}
+
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.btn {
+  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow:
+    -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow:
+    -7px -7px 20px 0px rgba(255, 255, 255, .9),
+    -4px -4px 5px 0px rgba(255, 255, 255, .9),
+    7px 7px 20px 0px rgba(0, 0, 0, .2),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+  transition: all 0.3s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+a.morebutton.bouncy:hover {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+
+
+/* Antonio's button */
+.button {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+  border-radius: 3px;
+}
+
+.button p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  user-select: none;
+}
+
+.button p:hover {
+  cursor: pointer;
+}
+
 
 
     /*kristian's new buttons*/
@@ -384,3 +457,6 @@ a span:nth-child(3){
         transform: translate(0, -66.666%);
       }
     }
+
+/* end antonio's button */
+
