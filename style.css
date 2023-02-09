@@ -285,7 +285,7 @@ a span:nth-child(3){
       --bg-color: #141218;
     }
 
-    button {
+    .kbtn {
       position:relative;
       padding: 10px 20px;  
       border: none;
@@ -305,12 +305,12 @@ a span:nth-child(3){
       overflow: hidden;   
     }
     
-    button:focus {
+    .kbtn:focus {
       outline-color: transparent;
       box-shadow: var(--btn-color) 2px 2px 22px;
     }
     
-    .right::after, button::after {
+    .right::after, .kbtn::after {
       content: var(--content);
       display: block;
       position: absolute;
@@ -319,7 +319,7 @@ a span:nth-child(3){
       pointer-events:none;
     }
     
-    button::after{
+    .kbtn::after{
       font-weight: 200;
       top: -30px;
       left: -20px;
@@ -347,20 +347,20 @@ a span:nth-child(3){
       transform: translate(0, -90%) rotate(0deg)
     }
     
-    button:hover .right::after {
+    .kbtn:hover .right::after {
       transform: translate(0, -47%) rotate(0deg)
     }
     
-    button .right:hover::after {
+    .kbtn .right:hover::after {
       transform: translate(0, -50%) rotate(-7deg)
     }
     
-    button .left:hover ~ .right::after {
+    .kbtn .left:hover ~ .right::after {
       transform: translate(0, -50%) rotate(7deg)
     }
     
     /* bubbles */
-    button::before {
+    .kbtn::before {
       content: '';
       pointer-events: none;
       opacity: .6;
