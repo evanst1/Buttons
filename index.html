@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,58 @@
     <script src="app.js"></script>
     <title>Antonio's Page</title>
 </head>
+
 <body>
 
     <div class="black">
-    <a href="#" class="neon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Neon button
-    </a>
-</div>
-<br><br>
-<input class="increase" type="button" value="A+" onclick="increaseFontSizeBy1px()">
-<p id="b">Font Size by 1 Pixel</p>
-<br><br>
-<a href="https://www.google.com/" target="_blank" class="yellow">Another Button</a>
-<br><br><br><br><br><br>
-<a href="something" class="morebutton bouncy">link</a><a href="something" class="morebutton bouncy">link</a><a href="something" class="morebutton bouncy">link</a>
+        <a href="#" class="neon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Neon button
+        </a>
+    </div>
+    <br><br>
+    <input class="increase" type="button" value="A+" onclick="increaseFontSizeBy1px()">
+    <p id="b">Font Size by 1 Pixel</p>
+    <br><br>
+    <a href="https://www.google.com/" target="_blank" class="yellow">Another Button</a>
+    <br><br><br><br><br><br>
+    <a href="something" class="morebutton bouncy">link</a><a href="something" class="morebutton bouncy">link</a><a
+        href="something" class="morebutton bouncy">link</a>
+    <button class="custom-btn btn"><span>Read More</span></button>
 
+    <div class="button">
+        <p>Click me</p>
+    </div>
 
-   <button class="custom-btn btn"><span>Read More</span></button>
-
-  
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+    <script>
+        var $button = document.querySelector('.button');
+$button.addEventListener('click', function () {
+    var duration = 0.3,
+        delay = 0.08;
+    TweenMax.to($button, duration, {
+        scaleY: 1.6,
+        ease: Expo.easeOut
+    });
+    TweenMax.to($button, duration, {
+        scaleX: 1.2,
+        scaleY: 1,
+        ease: Back.easeOut,
+        easeParams: [3],
+        delay: delay
+    });
+    TweenMax.to($button, duration * 1.25, {
+        scaleX: 1,
+        scaleY: 1,
+        ease: Back.easeOut,
+        easeParams: [6],
+        delay: delay * 3
+    });
+});
+    </script>
 </body>
+
 </html>
