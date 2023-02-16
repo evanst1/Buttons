@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+h1,h2,h3{
+  font-family: 'Julius Sans One', sans-serif;
+}
+p, a{
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0 !important;
+}
 body {
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr);
+}
+.dl{
+grid-column:1/-1; 
+}
+.dltext{
+  width:40%;
+  text-align:right;
+  margin-right:5rem;
+}
+.dlimg{
+  width:40%;
+}
+.dl img{
+  width:100%;
+}
+
+.dl {
   display: flex !important;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .neon {
@@ -11,23 +45,24 @@ body {
   display: inline-block;
   padding: 25px 30px;
   margin: 40px 0;
-  color: #03e9f4;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
-
+  margin-right: 0px;
+  background-color: #46533F ;
+  border-radius: 5rem;
 }
 
 .neon:hover {
-  background: #03e9f4;
-  color: #050801;
-  box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 200px #03e9f4;
+  background-color: #fff;
+  color: #46533F;
+  box-shadow: 0 0 5px #fff,
+    0 0 25px #fff,
+    0 0 50px #fff,
+    0 0 200px #fff;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
