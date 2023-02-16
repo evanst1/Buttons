@@ -9,6 +9,9 @@ p, a{
 
 }
 
+
+
+
 h1 {
   font-size: 5rem;
   margin-bottom: 0 !important;
@@ -17,8 +20,27 @@ body {
   display: grid !important;
   grid-template-columns: repeat(12, 1fr);
 }
-.dl{
-grid-column:1/-1; 
+.dl {
+  grid-column: 1/-1;
+  background-image: url("img/olive.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-bottom:5rem ; 
+}
+.view{
+  height: 100vh;
+  grid-column: 1/-1;
+  }
+.view {
+  height: 100vh;
+  grid-column: 1/-1;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url("img/olive2.jpg");
+  background-size: cover;
+
 }
 .dltext{
   width:40%;
@@ -31,19 +53,43 @@ grid-column:1/-1;
 .dl img{
   width:100%;
 }
+.section1, .section2{
+width:30%;}
+.view h1 {
+  display: block !important;
+  width: 30% !important;
+}
 
+.box h2{
+  text-align: center;
+}
+.but {
+  text-align: center;
+  margin-top: 2rem;
+}
+.box *{
+  text-align: center;
+}
 .dl {
   display: flex !important;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
+  margin-bottom:0;
 
+}
+.box {
+  background-color: #8d866921;
+  padding: 3rem;
+  border-radius: 3rem;
+  /* border-right: 9px solid black; */
+  box-shadow: 12px 13px 14px #495541;
+}
 .neon {
   position: relative;
   display: inline-block;
-  padding: 25px 30px;
+  padding: 11px 17px;
   margin: 40px 0;
   color: #ffffff;
   text-decoration: none;
@@ -168,11 +214,13 @@ a span:nth-child(3) {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  color: #fff;
+  z-index: 1 !important;
 }
 
 .yellow:after {
   content: "";
-  background-color: #ffe54c;
+  background-color: #475340;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -181,7 +229,11 @@ a span:nth-child(3) {
   left: 7px;
   transition: 0.2s;
 }
-
+.view h1 {
+  display: block !important;
+  width: 30% !important;
+  text-shadow: 4px 5px 3px white;
+}
 .yellow:hover:after {
   top: 0px;
   left: 0px;
@@ -195,7 +247,7 @@ a span:nth-child(3) {
 
 .yellow {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .bouncy {
@@ -244,9 +296,8 @@ a span:nth-child(3) {
 
 
 body {
-  background: #e0e5ec;
+  background: #F4F0ED;
 }
-
 
 .frame {
   width: 90%;
